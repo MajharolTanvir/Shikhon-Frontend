@@ -7,7 +7,7 @@ const rubik_Wet_Paint = Rubik_Wet_Paint({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-rubik-wet-paint',
 })
 
 const jacques_francois_shadow = Jacques_Francois_Shadow({

@@ -16,7 +16,7 @@ const config: Config = {
       },
     },
     fontFamily: {
-      sans: ["var(--font-inter)"],
+      sans: ["var(--font-rubik-wet-paint)"],
       serif: ["var(--font-mirza)"],
       mono: ["var(--font-jacques_francois_shadow)"]
     },
