@@ -57,7 +57,7 @@ const PrimaryButton = ({title}: Button) => {
             background: `radial-gradient(100px circle at ${position.x}px ${position.y}px, #1A1A1A, #00000026)`,
           }}
         />
-        <span className="relative z-20 font-san text-[10px] md:text-md 2xl:text-lg">{title}</span>
+        <span className="relative z-20 font-san text-[10px] md:text-md lg:text-[16px] 2xl:text-lg">{title}</span>
       </button>
     </>
   )
