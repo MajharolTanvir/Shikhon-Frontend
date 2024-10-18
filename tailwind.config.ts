@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#1976D2",
-        secondary: "#42A5F5",
-        accent: "#90CAF9",
-        text: "#BBDEFB",
-        background: "#E3F2FD",
+        primary: "#1A1A1A",
+        secondary: "#CA1F26",
+        accent: "#580D0E",
+        text: "#ffffff",
       },
-      fontFamily: {
-        primary: ["Playfair Display", 'sans'],
-        secondary: ["Protest Strike", 'serif'],
-      },
+    },
+    fontFamily: {
+      sans: ["var(--font-inter)"],
+      serif: ["var(--font-mirza)"],
+      mono: ["var(--font-jacques_francois_shadow)"]
     },
   },
   plugins: [],

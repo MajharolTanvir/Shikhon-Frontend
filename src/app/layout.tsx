@@ -1,6 +1,29 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/shared/Navbar/Navbar";
+import { Rubik_Wet_Paint, Mirza, Jacques_Francois_Shadow  } from 'next/font/google'
+ 
+const rubik_Wet_Paint = Rubik_Wet_Paint({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const jacques_francois_shadow = Jacques_Francois_Shadow({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jacques_francois_shadow',
+})
+
+const mirza = Mirza({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-mirza',
+})
+
 
 export const metadata: Metadata = {
   title: "Home | Shikhon",
@@ -13,10 +36,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-white">
-        <div className="w-[95%] sm:w-[90%] md:w-[90%] lg:w-[85%] xl:w-[80%] 2xl:w-[1440px] mx-auto">
-          <Navbar />
+    <html lang="en" className={`${rubik_Wet_Paint.variable} ${mirza.variable} ${jacques_francois_shadow.variable}`}>
+      <body>
+      <Navbar />
+        <div className="w-[92%] sm:w-[90%] md:w-[90%] lg:w-[85%] xl:w-[80%] 2xl:w-[1440px] mx-auto">
           {children}
         </div>
       </body>

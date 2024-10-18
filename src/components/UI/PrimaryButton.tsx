@@ -48,16 +48,16 @@ const PrimaryButton = ({title}: Button) => {
         onBlur={handleBlur}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="relative inline-flex w-fit mx-auto h-12 items-center justify-center overflow-hidden rounded-md border-2 border-accent bg-gradient-to-r from-primary to-secondary px-6 font-medium text-white shadow-2xl transition-colors focus:outline-none my-2.5"
+        className="relative inline-flex w-fit mx-auto h-10 2xl:h-12 items-center justify-center overflow-hidden rounded-md border-2 border-secondary bg-gradient-to-r from-accent to-secondary px-6 font-medium text-text shadow-2xl transition-colors focus:outline-none my-2"
       >
         <div
           className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
           style={{
             opacity,
-            background: `radial-gradient(100px circle at ${position.x}px ${position.y}px, #656fe288, #00000026)`,
+            background: `radial-gradient(100px circle at ${position.x}px ${position.y}px, #1A1A1A, #00000026)`,
           }}
         />
-        <span className="relative z-20">{title}</span>
+        <span className="relative z-20 font-san text-[10px] md:text-md 2xl:text-lg">{title}</span>
       </button>
     </>
   )
